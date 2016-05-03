@@ -1,0 +1,232 @@
+*{ padding: 0px; margin: 0px; font-family: arial}
+li{ list-style: none}
+a{ text-decoration: none;}
+
+$cinza-bg: #ECECEC;
+$cinza-cor: #666;
+
+
+.pagina{ float: left; width: 100%;}
+
+
+.menu-topo{ 	
+	text-align:right; 
+	padding: 10px 0 5px 10px; 
+	margin-bottom:5px;
+
+		ul{
+			margin: 0 auto; 
+			width: 230px; 
+
+			li{
+				float: left;
+				border-right: 1px solid #000;
+				text-align: center;
+				height: 40px;
+
+				&:last-child{
+					border: none;
+				}
+
+				a{					
+					color: $cinza-cor; 
+					margin: 0px 10px; 
+					text-decoration: none; 
+					font-size: 12px;
+					float: left;
+
+					&::before{
+						display: block;
+						font-size: 25px;
+					}
+
+					&.icon-menu::before{
+						padding-top: 4px;
+					}
+
+					&.icon-edit::before{
+						font-size: 30px;
+					}
+
+					&.icon-basket::before{
+						font-size: 30px;
+					}
+				}
+
+			}
+		}
+		
+}
+
+.buscar{ 
+	background: $cinza-bg; 
+	padding: 8px 8px;
+	margin-top: 50px;
+	position: relative;
+
+		input{ 
+			height: 30px; 
+			padding-left: 7px; 
+			border: 1px solid #6D6D6D;
+			width: 100%;
+			padding-right: 40px;
+			box-sizing: border-box;
+		}
+
+		a.btnBusca{ 
+			width: 40px; 
+			height: 30px;
+			background: #35bfa9 10px 8px; 
+			position: absolute;	
+			top: 8px;
+			right: 8px;
+
+			&::before{
+				font-size: 30px;
+				position: absolute;
+				top: 2px;
+				left: 5px;
+			}			
+		}
+
+}
+
+.menuLateral{ 
+	padding: 10px 0px 10px 0px;
+	margin: 10px 0 10px ;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+
+		> li {
+			background: $cinza-bg; 
+			border-bottom: 1px solid #CCCCCC; 
+			padding: 10px 0 10px 20px; 
+			position: relative;
+			> a{
+				
+				color: $cinza-cor ;
+				font-size: 15px;
+
+				&:before{
+					position:absolute;
+					right: 5px;
+					top:5px;
+					font-size:30px;
+				}
+			}			
+		}
+}
+
+.filtroMenu{ 
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 10px;
+
+		> li {
+			> a{ 
+				padding-left: 20px; 
+				color: $cinza-cor; 
+				border-left: 4px solid red;
+			}	
+			> ul{
+				display: none;
+				> li{ 
+					padding: 3px 0;
+
+						> a{ 
+							color: $cinza-cor; 
+							font-size: 12px; 
+							padding-left: 25px;
+						}
+				}
+			}		
+		}
+}
+
+article { 
+	float: left; 
+	width: 100%; 
+	padding-top: 20px; 
+
+		.ordenar{ 
+			float: left;  
+			width: 100%; 
+			background:$cinza-bg; 
+			padding: 8px 0; 
+			text-align: center; 
+			font-size: 13px; 
+			color: $cinza-cor; 
+			margin-bottom: 20px; 			
+
+				select{ 
+					-webkit-appearance: none;
+				    -moz-appearance: none;
+				    appearance: none;
+				    border: 1px solid #C3C3C3;				    
+				    color: #828282;
+				    font-weight: normal;
+				    height: 30px;
+				    line-height: 30px;
+				    padding: 0px 0px 0px 15px;
+				    width: 150px;
+				    margin-left:10px;
+				}
+		}
+
+		ul{ 
+			float: left; 
+			width: 100%;
+			border-top: 1px solid #e5e5e5;
+			padding-top: 20px;
+
+				li { 
+					float: left;
+					padding-bottom: 15px; 
+					padding:10px;
+					border: 1px solid #e5e5e5;
+					margin: 0 20px 20px 20px;
+					-webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.15);
+					-moz-box-shadow:    4px 4px 5px 0px rgba(50, 50, 50, 0.15);
+					box-shadow:         4px 4px 5px 0px rgba(50, 50, 50, 0.15);
+
+						h2{ float: left; width: 100%; font-size: 12px; color: $cinza-cor; text-align: center; font-weight: normal;}
+						.produtoNome{ 
+							float: left; 
+							width: 100%; 
+							text-align: center; 
+							color: $cinza-cor; 
+							font-size: 14px; 
+							padding:10px 0 10px 0;
+							border-bottom: 1px solid #e5e5e5;
+						}
+						.produtoFoto{ 
+							float: left; 
+							width: 100%; 
+							text-align: center; 
+							position: relative; 
+
+								span{ 
+									position: absolute; 
+									left: 30%; 
+									top: 10px; 
+									width: 34px; 
+									background: #000; 
+									padding: 10px; 
+									color: #fff; 
+									border-radius: 50%; 
+									text-align: center;
+									font-size: 16px;
+									word-wrap: break-word;
+								}
+
+								img{
+									max-width: 100%;
+								}
+						}
+						p{ float: left; width: 100%; padding-bottom:5px; color: $cinza-cor; text-align: center;}
+						.produtoFabricante{ float: left; width: 100%; color: $cinza-cor; font-size: 12px; text-align: center;}
+						.btnComprar{ float: left; width: 100%; text-align: center; padding-top: 15px; margin: 10px 0 10px 0; border-top: 1px solid #e5e5e5;}
+						.btnComprar a{ background: #35bfa9; padding: 5px 20px; color: #fff; margin-top: 10px; font-size: 14px;}
+						.textoDe{ text-decoration: line-through; font-size:14px;}
+				}
+		}
+}

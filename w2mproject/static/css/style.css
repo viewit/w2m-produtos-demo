@@ -1,0 +1,48 @@
+*{ padding: 0px; margin: 0px; font-family: arial}
+li{ list-style: none}
+a{ text-decoration: none;}
+
+.pagina{ float: left; width: 315px;}
+.menu-topo{ float: left; width: 100%; text-align: right; padding: 5px 0 5px 10px; }
+.menu-topo a{ float: left; color: #666; margin-right: 10px; text-decoration: none; font-size: 12px;}
+
+.buscar{ float: left; width: 100%; background: #e5e5e5; padding: 5px 0;}
+.buscar input{ float: left; height: 20px; width: 150px; }
+.buscar div{ margin: 0 auto; width: 180px}
+.buscar .btnBusca{ float: left; background: #D3D2CB; width: 25px; height: 24px;}
+.buscar .btnBusca:hover{ background: red;}
+
+.menuLateral{ float: left; width: 100%; padding: 10px 0;}
+.menuLateral > li > a{ float: left; width: 94%; background: #e5e5e5; padding: 5px 0 5px 20px; border-bottom: 1px solid #5e5e5e; color: #666 }
+
+.filtroMenu{ float: left; width: 100%;}
+.filtroMenu > li > a{ float: left; padding-left: 20px; color: #666; border-left: 4px solid red;}
+.filtroMenu > li > ul > li{ float: left; width: 100%; padding: 3px 0;}
+.filtroMenu > li > ul > li > a{ color: #666; font-size: 12px; padding-left: 25px;}
+
+article { float: left; width: 100%; padding-top: 20px; }
+article .ordenar{ float: left;  width: 100%; background:#e5e5e5; padding: 5px 0; text-align: center; font-size: 13px; color: #666; margin-bottom: 20px; }
+article .ordenar select{ width: 150px;}
+article ul{ float: left; width: 100%}
+article ul li { float: left; width: 100%; padding-bottom: 15px; border-bottom: 1px solid; margin-bottom: 20px;}
+article ul li h2{ float: left; width: 100%; font-size: 12px; color: #666; text-align: center; font-weight: normal;  }
+article ul li .produtoNome{ float: left; width: 100%; text-align: center; color: #666; font-size: 14px; margin-bottom: 10px; }
+article ul li .produtoFoto{ float: left; width: 100%; text-align: center; position: relative; }
+article ul li .produtoFoto span{ 
+	position: absolute; 
+	left: 70px; 
+	top: 0; 
+	width: 34px; 
+	background: #000; 
+	padding: 10px; 
+	color: #fff; 
+	border-radius: 50%; 
+	text-align: center;
+	font-size: 16px;
+	word-wrap: break-word;
+}
+article ul li p{ float: left; width: 100%; color: #666; text-align: center;}
+article ul li .produtoFabricante{ float: left; width: 100%; color: #666; font-size: 12px; text-align: center;}
+article ul li .btnComprar{ float: left; width: 100%; text-align: center; padding-top: 20px;}
+article ul li .btnComprar a{ background: #35bfa9; padding: 5px 20px; color: #fff; margin-top: 10px; font-size: 14px;}
+article ul li .textoDe{ text-decoration: line-through;}
